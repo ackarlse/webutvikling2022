@@ -1,0 +1,94 @@
+/*Her stoppet vi i forelesningen*/
+/*Gjør oppgavene i rekkefølgen som er satt, 
+sjekk nettsiden hver gang du har gjort en endring eller lagt til noe slik at du skjønner hva som endret seg basert på hva du gjorde*/
+
+
+
+
+
+/*Oppgave 7, gjør denne til slutt!*/
+/*sett stjerne (*) som en selektor og sett box-sizing til border-box. 
+Hvis du ikke skjønner hva som skjedde eller hvorfor så leser du om box model på LMS siden */
+
+
+body{
+    margin: 0;
+    /*Oppgave 6*/
+    /*endre fonten til arial eller verdana, eller prøv å finn noe annet*/
+}
+
+header nav h3 {
+    float: left;
+  }
+
+header nav ul{
+    float:right;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+header nav a{
+    color:#000;
+    text-decoration: none;
+}
+
+nav{
+    overflow: auto;
+    background-color: #d2dfe1;
+    padding: 1rem;
+}
+
+#front-page-container{
+    /*Oppgave 2*/
+    /*endre margin slik at høyre og venstre side får auto*/
+    margin: 2rem 0;
+    max-width: 1200px;
+    width: 100%;
+    overflow: auto;
+}
+
+main{
+    width: 80%;
+    float: left;
+}
+
+/*oppgave 1*/
+/*sett article som en selector*/
+{
+    /*gi artikklene en max bredde på 300px*/
+    /*gi artikklene en vidde på 100%*/
+    /*sett flyten til artikklene til å være venstre*/
+
+    /*oppgave 3*/
+    /*gi artikkel en kantlinje (https://www.w3schools.com/css/css_border.asp) */
+
+    /*Oppgave 5*/
+    /*sett invendig luft til å være 1rem*/
+    /*Sett utvendig luft til å være 0.5rem*/
+    /*Nå kan det hende en av boksene havnet under de andre, dette er meningen og kommer til å endre seg når du har gjort oppgave 6*/
+
+}
+
+/*Oppgave 4*/
+/*sett en selektor som peker til img taggen i article*/
+{
+    /*gi bildet 100% bredde*/
+
+}
+
+
+aside{
+    width: 20%;
+    float: left;
+}
+
+footer{
+    clear: both;
+    /*gi footer en bakgrunnsfarge*/
+    /*gi footer en tekst farge*/
+    /*gi footer "innvendig luft"*/
+}

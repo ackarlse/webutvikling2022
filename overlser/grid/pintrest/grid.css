@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: block;
+    padding: 2rem;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ヒラギノ角ゴ Pro W3,Hiragino Kaku Gothic Pro,メイリオ,Meiryo,ＭＳ Ｐゴシック,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+i{
+    color: #767676;
+    font-size: 30px;
+}
+
+.fa-pinterest{
+    color: #e60023;
+    font-size: 2rem;
+}
+.button-container, nav{
+    display: flex;
+    padding: 10px;
+    width: 10%;
+}
+.button-container{
+    justify-content: space-between;
+}
+nav{
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.button-container i{
+    font-size: 30px;
+}
+
+form{
+    width: 80%;
+    display: flex;
+   
+}
+
+input{
+    background-color: #efefef;
+    border: 0;
+    border-radius: 0px 50px 50px 0px;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.fa-search{
+    background-color: #efefef;
+    border: 0;
+    border-radius: 50px 0px 0px 50px;
+    height: 50px;
+    padding: 17px 0 17px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main{
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    margin: 2rem auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 22px #d5d5d4;
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+main img{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.left i{
+    color: #000;
+    font-size: 20px;
+}
+
+.right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.right button, #follow button{
+    border-radius: 34px;
+    padding: 14px;
+    background-color: #e60023;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+main section h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+main section p{
+    margin: 0;
+}
+
+main section .button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main section form{
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+#user-comment{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#user-comment i{
+    font-size: 50px;
+}
+
+#user-comment input{
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #efefef;
+
+}
+
+#follow{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+#follow button{
+    background-color: #efefef;
+    color: #000;
+}
+
+#more{
+    padding: 0 5rem;
+	display: grid;
+    /*Kan skrives anderledes, jeg har valgt 6 kolonner og 6 rader,
+    dette er noe dere kan velge selv*/
+	grid-template-columns: repeat(6, /*........*/);
+	grid-template-rows: repeat(6, /*........*/);
+	gap: 1rem;
+}
+
+#more h2 {
+    text-align: center;
+    
+}
+
+#box-1{
+	
+}
+
+#box-2{
+	
+}
+
+#box-3{
+	
+}
+
+
+#box-4{
+	
+
+}
+
+#box-5{
+	
+
+}
+
+#box-6{
+
+	
+}
+
+#box-7 {
+	
+
+    
+}
+
+#box-8 {
+	
+
+}
+
+#box-9 {
+
+    
+}
+
+#box-10 {
+
+    
+}
+
+#box-11 {
+
+    
+}
+
+#box-12 {
+
+    
+}
+
+#box-13 {
+
+    
+}
+
+#box-14 {
+
+    
+}
+
+#box-15 {
+
+    
+}
+#box-16 {
+
+    
+}
+#more img{
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#more article h3{
+	margin: 10px 0 0 0;
+}

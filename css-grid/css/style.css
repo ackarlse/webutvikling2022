@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,500&display=swap');
+/*Her stoppet vi i forelesningen*/
+/**/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a{
+    color:#000;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    overflow: auto;
+    background-color: #d2dfe1;
+    padding: 2rem;
+}
+
+#front-page-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    /*grid-template-areas: "header header header" 
+                        "main main aside" 
+                        "footer footer footer";
+    grid-gap: 1rem;
+    grid-row-gap: 1rem;*/
+
+}
+header{
+    /*grid-area: header;*/
+    grid-area: 1/1/2/4;
+}
+main{
+    /*grid-area: main;*/
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 3;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-areas: "col-1 col-2 col-3";
+    justify-content: space-evenly;
+}
+
+#article-1{
+    /*
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+
+    /*kunne og skrevet: 
+    grid-area: col-1;
+    */
+    grid-area: 1/1/2/2;
+
+}
+#article-2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 2;
+
+    /*kunne og skrevet: 
+    grid-area: col-2;
+    */
+    
+}
+#article-3{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-column-end: 4;
+    grid-row-end: 2;
+    
+    /*kunne og skrevet: 
+    grid-area: col-3;
+    */
+
+}
+
+aside{
+    /*grid-area: aside;*/
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-column-end: 4;
+    grid-row-end: 3;
+}
+footer{
+    /*grid-area:footer;*/
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 4;
+    grid-row-end: 4;
+}
+
+
+main article{
+    /*endret vidde bredde fra hva vi gjorde 05.08*/
+    max-width: 250px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+}
+
+/*la til bredcrumbs og fjernet default CSSS på ul elementet med id breadcrumbs*/
+#breadcrumbs{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#breadcrumbs li::after{
+    content: ">";
+    margin: 0 0.2rem;
+}
+#breadcrumbs li:last-child:after{
+    content: "";
+    margin: 0 0.2rem;
+}
+#breadcrumbs li:last-child{
+    font-weight: 900;;
+}
+/*legge til en active-page id på meny punktet som er landingssiden*/
+
+#active{
+
+}
+/*for å få det under til å funke så må du sette en klasse som du kaller "button" på <a> som ligger i artikklene*/
+.button {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #d2dfe1;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .button:hover {
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+
+  .button:active {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #a53f55;
+    text-decoration: none;
+    color: #fff;
+  }
+
+article img{
+    /*Det er ikke optimalt å gjøre et mindre bilde større på denne måten, men dette er ment til øving så det er greit!*/
+    width: 100%;
+}
+
+
+footer{
+    background-color: rgb(80, 80, 80);
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+
+
