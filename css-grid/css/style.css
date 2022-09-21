@@ -24,8 +24,33 @@ header{
     grid-area: header;
 }
 
+#main-menu{
+    position: absolute;
+    top:125px;
+    left:0;
+    background-color: #2f2f2f;
+    width: 100%;
+    padding: 1rem;
+}
+
+#main-menu li{
+    list-style: none;
+    
+}
+
+#main-menu a{
+    color: #fff;
+    padding: 1rem 0;
+    display: inline-block;
+    font-size: 1.3rem;
+
+}
+
 main{
     grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 aside{
@@ -50,93 +75,15 @@ nav{
     overflow: auto;
     background-color: #d2dfe1;
     padding: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
-
-/*
-#front-page-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    /*grid-template-areas: "header header header" 
-                        "main main aside" 
-                        "footer footer footer";
-    grid-gap: 1rem;
-    grid-row-gap: 1rem;
-
-}
-header{
-    /*grid-area: header;
-    grid-area: 1/1/2/4;
-}
-main{
-    /*grid-area: main;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column-end: 3;
-    grid-row-end: 3;
-
-    display: grid;
-    grid-template-areas: "col-1 col-2 col-3";
-    justify-content: space-evenly;
-}
-
-#article-1{
-    /*
-    grid-column-start: 1;
-    grid-row-start: 1;
-    grid-column-end: 2;
-    grid-row-end: 2;
-
-    /*kunne og skrevet: 
-    grid-area: col-1;
-    
-    grid-area: 1/1/2/2;
-
-}
-#article-2{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-column-end: 3;
-    grid-row-end: 2;
-
-    /*kunne og skrevet: 
-    grid-area: col-2;
-    
-    
-}
-#article-3{
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-column-end: 4;
-    grid-row-end: 2;
-    
-    /*kunne og skrevet: 
-    grid-area: col-3;
-    
-
-}
-
-aside{
-    /*grid-area: aside;
-    grid-column-start: 3;
-    grid-row-start: 2;
-    grid-column-end: 4;
-    grid-row-end: 3;
-}
-footer{
-    /*grid-area:footer;
-    grid-column-start: 1;
-    grid-row-start: 3;
-    grid-column-end: 4;
-    grid-row-end: 4;
-}
-*/
 
 main article{
     /*endret vidde bredde fra hva vi gjorde 05.08*/
-    max-width: 250px;
-    width: 100%;
+    flex-basis:250px;
+    flex-grow: 1;
     border: 1px solid #d9d9d9;
     padding: 1rem;
 }
@@ -146,7 +93,6 @@ main article{
     padding: 0;
     margin: 0;
 }
-
 
 
 #breadcrumbs li::after{
@@ -192,12 +138,24 @@ article img{
     width: 100%;
 }
 
-
 footer{
     background-color: rgb(80, 80, 80);
     color: #fff;
     padding: 3rem 2rem;
 }
+
+
+.fa-solid.fa-house{
+    font-size: 30px;
+    color: #a53f55;
+    margin: 0 0.5rem;
+}
+
+
+.fa-solid.fa-house:hover{
+    color: black;
+}
+
 
 @media only screen and (min-width: 900px){
     #front-page-container{
@@ -211,6 +169,31 @@ footer{
         grid-gap: 1rem;
         grid-row-gap: 1rem;
     
+    }
+
+    header nav{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    #main-menu{
+        display: block !important;
+        position: static;
+        background-color: transparent;
+        width: fit-content;
+    } 
+
+    #main-menu a{
+        color: #000;
+    }
+
+    #main-menu li{
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    #ham-icon{
+        display: none;
     }
 }
 

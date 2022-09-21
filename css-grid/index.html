@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>CSS Grid</title>
 </head>
@@ -15,8 +22,15 @@
             <nav>
                 <!--Lagt logo i nav fordi logo skal kunne føre til forsiden, ala del av hovednavigering-->
                 <h3><a href="index.html">Logo</a></h3>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
+                
+                
+                <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+                
+                
+                <ul id="main-menu" style="display:block">
+                    <li><a href="index.html">Hjem<i class="fa-solid fa-house"></i>
+
+                    </a></li>
                     <li><a href="innholdsside.html">Innholdsside</a></li>
                     <li><a href="#">Menypunkt</a></li>
                     <li><a href="#">Menypunkt</a></li>
@@ -61,5 +75,6 @@
             <p>Webutvikling høst 2022</p>
         </footer>
     </div>
+    <script src="javascript/ham.js"></script>
 </body>
 </html>
