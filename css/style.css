@@ -1,0 +1,14 @@
+body{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+.grey-box{
+    background-color: grey;
+  }
