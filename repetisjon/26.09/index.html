@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Legger til normalize for å starte med ''clean'' slate'-->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link href="font/css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Repetisjon 26.09 - HTML struktur, side opplenking, CSS</title>
+    
+    <!--Legge til fontawsome-->
+</head>
+<body>
+    <div id="grid-container">
+        <header id="top-header">
+            <h2>Nettside Navn</h2>
+        </header>
+        <nav>
+            <form>
+                <!-- <input type="search" name="search" disabled>-->
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </form>
+            <ul>
+                <li><a href="#">Nyheter</a></li>
+                <li><a href="#">Hva er populært</a></li>
+                <li><a href="#">Salg</a></li>
+                <li><a href="#">Klær</a></li>
+            </ul>
+        </nav>
+        <header id="welcome-header" class="card-flex">
+            <div class="shop-card">
+                <h1>Høsten er her</h1>
+                <a href="#">Shop her</a>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Oppdag noe nytt</h2>
+                <article class="card-flex">
+                    <div class="shop-card">
+                        <h3>Nyheter</h3>
+                        <a href="#">Shop her</a>
+                    </div>
+                </article>
+                <article class="card-flex">
+                    <div class="shop-card">
+                        <h3>Strikk</h3>
+                        <a href="#">Shop her</a>
+                    </div>
+                </article>
+                <article class="card-flex">
+                    <div class="shop-card">
+                        <h3>Introduserer tull</h3>
+                        <a href="#">Shop her</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

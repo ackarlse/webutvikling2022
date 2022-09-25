@@ -1,0 +1,144 @@
+/*legger til font fra google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1em + 1vw);
+}
+/*Vi jobber utifra mobile-first*/
+#grid-container{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "top-header" "nav" "header" "main" "footer";
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    margin: 0 auto;
+}
+#top-header{
+    grid-area: top-header;
+    display: grid;
+    grid-template-areas: "left center right";
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+}
+
+#top-header h2{
+    grid-area: center;
+}
+
+nav{
+    grid-area:nav;
+    padding: 0 2rem;
+}
+
+nav ul{
+    padding:0;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 1rem 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+.fa-solid.fa-magnifying-glass {
+    background-color: transparent;
+    border: none;
+  }
+
+#welcome-header{
+    grid-area:header;
+    height: 500px;
+    background-size: cover;
+    background-image: url(https://via.placeholder.com/1000x500);
+
+}
+
+.card-flex{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main{
+    grid-area: main;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+main section article{
+    min-height: 500px;
+    flex-basis: 30%;
+    flex-grow: 1;
+    background-image: url(https://via.placeholder.com/340x500);
+    background-size: cover;
+}
+
+main section h2{
+    flex-basis: 100%;
+}
+.shop-card {
+    min-width: 250px;
+    flex-basis: 40%;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.82);
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .shop-card a{
+    display: inline-block;
+}
+
+footer{
+    grid-area: footer;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+    border-top: 1px solid rgb(174, 174, 174);
+}
+footer ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+footer ul li{
+    list-style: none;
+}
+
+/*Hva som skjer når skjermen blir større*/
+@media only screen and (min-width:900px) {
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.2rem; }
+p, a, ul, li { font-size: 1.2rem; }
+    #grid-container {
+        max-width: 1600px;
+        grid-template-areas: "top-header top-header" "nav header" ". main" "footer footer";
+        grid-template-columns: 1fr 4fr;
+      }
+      nav{
+        position: sticky;
+        top: 10px;
+      }
+    
+}
