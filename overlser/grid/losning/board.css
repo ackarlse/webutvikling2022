@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bak.png");
+    background-size: cover;
+    padding: 0 3rem;
+}
+
+div{
+    background-color: #F3EADB;
+    border: 2px solid #35291f;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+div i{
+    width: 100%;
+}
+.fas.fa-gem{
+    font-size: 30px;
+    color: #37b4ff;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-coins{
+    font-size: 30px;
+    color: #fff22e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-dragon {
+    font-size: 30px;
+    color: brown;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-hat-wizard {
+    font-size: 33px;
+    transform: rotate(-21deg);
+    color: #53399e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+#grid-container{
+    display: grid;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    /*Denne kan skrives anderledes, men det skal være 9 kolonner*/
+    grid-template-columns: repeat(9, 1fr);
+    /*Denne kan skrives anderledes, men det skal være 10 rader*/
+    grid-template-rows: repeat(10, 1fr);
+    min-height: 900px;
+}
+
+#cell-1{
+    grid-row: 9/10;
+    grid-column: 3/4;
+}
+
+#cell-2{
+    grid-row: 8/9;
+    grid-column: 3/4;
+}
+
+#cell-3{
+
+    grid-area: 7/3;
+
+}
+
+#cell-4{
+    grid-area: 6/3/7/4;
+}
+
+#cell-5{
+    grid-area: 5/3;
+}
+
+/*Avsporing*/
+
+#cell-6{
+    grid-area: 5/2;
+
+}
+
+#cell-7{
+    grid-area: 5/1;
+}
+
+#cell-8{
+    grid-area: 4/1 ;
+}
+
+#cell-9{
+    grid-area: 3/1;
+}
+/*Slutt på avsporing*/
+
+#cell-10{
+    grid-area: 4/3 ;
+
+}
+
+#cell-11{
+    grid-area: 4/4;
+}
+
+#cell-12{
+    grid-area: 4/5;
+}
+
+/*Avsporing*/
+
+#cell-13{
+    grid-area: 3/5;
+}
+
+#cell-14{
+    grid-area: 2/5;
+}
+
+/*Slutt på avsporing*/
+
+#cell-15{
+    grid-area: 5/5;
+
+}
+
+#cell-16{
+    grid-area: 6/5;
+}
+
+#cell-17{
+    grid-area: 6/6;
+}
+
+#cell-18{
+    grid-area: 6/7;
+}
+
+/*Avsporing*/
+
+#cell-19{
+    grid-area: 7/7;
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-20{
+    grid-area: 6/8;
+}
+
+#cell-21{
+    grid-area: 6/9;
+
+}
+
+#cell-22{
+    grid-area: 5/9;
+
+}
+
+#cell-23{
+    grid-area: 4/9;
+
+}
+
+#cell-24{
+    grid-area: 3/9;
+
+}
+
+#cell-25{
+    grid-area: 3/8;
+}
+
+#cell-26{
+    grid-area: 3/7;
+}
+
+#cell-27{
+    grid-area: 4/7;
+
+}
