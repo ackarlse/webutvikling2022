@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML skjema</title>
+		<link rel="stylesheet" href="formstyle.css">
+		<style>
+		main{
+			max-width: 1400px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		/*img{
+			width: 100%;
+		}*/
+		</style>
+	</head>
+	<body>
+		<main>
+			<!-- Responsivitet med img taggen -->
+			<section id="res-img">
+				<img srcset="img/slott_900.jpg 900w,
+	             			img/slott_1200.jpg 1200w"
+	             	sizes="100vw"
+	     			src="img/slott.jpg"
+	    			alt="A english castle">
+    		</section>
+    		<!-- Responsivitet med picture taggen -->
+    		<section id="res-pic">
+    			<picture>
+    				<source media="(min-width:900px)" srcset="img/slott_900.jpg">
+    				<source media="(min-width:375px)" srcset="img/slott_640.jpg">
+    				<img src="img/slott.jpg" alt="et engelsk slott">
+    			</picture>
+    		</section>
+    		<figure>
+    			<img src="img/slott.jpg" alt="et engelsk slott">
+    		</figure>
+    		<!-- Bilde referanser -->
+    		<section id="img-ref">
+	    		<span>Bilde av <a href="https://unsplash.com/photos/qzsagNSnehw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">David Toman</a></span>
+	    		<span>Bilde av <a href="https://unsplash.com/photos/rsbku393IEs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Taylor Foss</a></span>
+	    		<span>Bilde av <a href="https://unsplash.com/photos/FN-3TXezroI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Jonathan Cooper</a></span>
+			</section>
+		</main>
+	</body>
+</html>
