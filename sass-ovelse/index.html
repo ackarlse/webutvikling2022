@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100&family=Raleway:ital,wght@0,200;1,100&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,400;1,500&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            position: relative;
+            font-size: calc(1vw + 1em);
+            font-family: 'Poppins', sans-serif;
+        }
+        header{
+            position: absolute;
+            padding: 2rem;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        #contact{
+            display: inline-block;
+            background-color: #5e9fa1;
+            padding: 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+
+        }
+        nav{
+            position: absolute;
+            top: 40vh;
+            
+        }
+        nav li{
+            list-style: none;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(52, 52, 52);
+            font-weight: 600;
+        }
+        nav a:hover{
+            color: #5e9fa1ad;
+        }
+        #active{
+            font-weight: 700;
+            color: #5e9fa1;
+            padding-left: 1rem;
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        article{
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .flex-container section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        p, a{
+            font-size: 1.2rem;
+        }
+        .background-img{
+            background-image: url(isbjorn.jpg);
+            background-size: cover;
+        }
+        section, .background-img {
+            flex-basis: 50%;
+            height: 100vh;
+        }
+        figure{
+            margin: 0;
+        }
+
+        h1{
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 900;
+        }
+        #color-word{
+            color: #5e9fa1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="logo">Logo</h3>
+        <a href="#" id="contact">Kontakt oss</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Menypunkt</a></li>
+            <li><a id="active" href="#">Menypunkt</a></li>
+            <li><a href="#">Menypunkt</a></li>
+        </ul>
+    </nav>
+    <div class="flex-container">
+        <section>
+            <article>
+                <h1>At vero eos et <span id="color-word">accusamus</span> et iusto</h1>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus,</p>
+            </article>
+        </section> 
+        <div class="background-img">
+        </div>
+    </div>
+</body>
+</html>
