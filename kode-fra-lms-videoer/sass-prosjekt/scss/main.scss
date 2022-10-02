@@ -1,0 +1,99 @@
+@import 'design/colors.scss';
+@import 'design/sizevalues.scss';
+@import 'design/mixins.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+	box-sizing:border-box;
+}
+
+html{
+	font-size:calc(1em + 1vw);
+}
+
+body{
+	color:$black;
+	font-family: 'Roboto', sans-serif;
+}
+
+.box-defaults{
+	max-width:$max-width;
+	width:100%;
+	margin:0 auto;
+}
+
+header{
+	
+	nav{
+
+		/*gjenbruker koden som er skrevet i klassen .box-default*/
+		@extend .box-defaults;
+
+		/*inkluderer en mixin som finnes i _mixin arket som ligger i design mappa*/
+		@include boks-skygge;
+			
+			ul{
+				padding:0;
+				margin:0;
+			}
+			li{
+				display:inline-block;
+				margin: 0 1rem;
+
+				/*Nesting med pseudoklasse*/
+				&:first-child{
+					margin: 0 1rem 0 0;
+				}
+			}
+			a{
+				font-size:0.8rem;
+				text-decoration:none;
+				display:inline-block;
+				color:$black;
+
+				/*Nesting med pseudoklasse*/
+				&:hover{
+					color:$blueshade;
+				}
+			}
+
+
+
+			#active{
+				/*fargevariabel bruk, fargen er definert i _colors.scss som ligger i design mappa*/
+				background-color:$blueshade;
+				padding:1rem 1.5rem;
+				color:$white;
+				}
+		
+	}
+}
+
+main{
+	
+	/*gjenbruker koden som er skrevet i klassen .box-default lengre opp i arket*/
+	@extend .box-defaults;
+	
+
+	/*max-width:$max-width;
+	width:100%;
+	margin:0 auto;*/
+	
+	h1{
+		font-size:1.8rem;
+		
+		/*variabler i bruk*/
+		color:$blueshade;
+		font-weight:$dritfet;
+		
+
+		/*Mixin med variabler*/
+		@include tekst-skygge($shadow-bottom, $shadow-right, $shadow-spread, $shadow-color);
+
+	}
+
+	p{
+		font-size:0.8rem;
+	}
+}

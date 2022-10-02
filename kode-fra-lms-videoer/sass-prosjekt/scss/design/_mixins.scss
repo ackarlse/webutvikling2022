@@ -1,0 +1,7 @@
+@mixin boks-skygge{
+	box-shadow:$shadow-bottom $shadow-right $shadow-spread $shadow-color;
+}
+
+@mixin tekst-skygge($bottom, $right, $spread, $color){
+	text-shadow: $bottom $right $spread $color;
+}
