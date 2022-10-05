@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Passions+Conflict&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #nav{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        #logo{
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        #logo a{
+            letter-spacing: -4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        #section{
+            text-align: center;
+            border-top: 1px solid #efefef;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+        #heading-1{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        #welcome-text{
+            font-family: 'Passions Conflict', cursive;
+            width: 50%;
+            margin: 0 auto;
+        
+        }
+        #container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        #main{
+            margin: 2rem 0;
+            text-align: center;
+            border-top: 1px solid #efefef;
+        }
+
+        #heading-2{
+            margin: 5rem 0;
+            font-size: 30px;
+        }
+
+        .article{
+            width: 100%;
+            margin: 2rem 0;
+            overflow: auto;
+            background-color: rgb(25, 25, 65);
+            text-align: left;
+        }
+
+        #heading-3, .article p{
+            width: 70%;
+            float: right;
+            padding: 1rem;
+            margin:0;
+            color: rgb(214, 11, 11);
+        }
+        #heading-3 a{
+            font-size: 24px;
+            color: rgb(214, 11, 11);
+            font-weight: 600;
+           
+        }
+        .article img{
+            /*Det under 'beskjærer' bildet*/
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <p id="logo"><a href="#">Logo</a></p>
+            <a href="#">Hjem</a>
+            <a href="#">Produkter</a>
+            <a href="#">Oppskrifter</a>
+            <a href="#">Kontakt oss</a>
+        </div>
+        <div id="section">
+            <p id="heading-1">Velkommen til ....</p>
+            <p id="welcome-text">ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+        </div>
+        <div id="main">
+            <p id="heading-2">Våre nyeste artikkler</p>
+            <div class="article">
+                <img src="https://images.unsplash.com/photo-1664791782299-b86872a2f733?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80">
+                <p id="heading-3"><a href="#">Surdeigsbrød på 1,2,3</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="article">
+                <img src="https://images.unsplash.com/photo-1565117661210-fd54898de423?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+                <p id="heading-3"><a href="#">Å lage matchalatte er kjempeenkelt!</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+            <div class="article">
+                <img src="https://images.unsplash.com/photo-1663928958939-2ed7395177a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80">
+                <p id="heading-3"><a href="#">Gulrøtter er fulle av betakaroten og andre viktige vitaminer</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
