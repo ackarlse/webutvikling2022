@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdata - bok</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Passions+Conflict&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        #page-header{
+            background-color: brown;
+            color: #fff;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .article-content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .article-content section{
+            width: 70%;
+        }
+
+        .article-content figure{
+            width: 30%;
+            margin: 0;
+        }
+        h2{
+            margin: 0;
+        }
+        main{
+            padding: 2rem 0;
+        }
+        .breadcrumbs {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .breadcrumbs li{
+            display: inline-block;
+        }
+        .breadcrumbs li a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Oppgave: Fyll siden med fornuftig microdata, med riktig markering er det også flere elementer som registreres som rich results i google, husk å test og validerer i både validatoren og rich result -->
+    <header id="page-header">
+        <nav class="container">
+            <h3>Logo</h3>
+            <form>
+                <input type="search" name="search">
+                <button>Søk</button>
+            </form>
+        </nav>
+    </header>
+    <div class="container"> 
+        <nav>
+            <ul class="breadcrumbs">
+                <li><a href="#">Eventyr ></a></li>
+                <li><a href="#">Witcher ></a></li>
+                <li><b><a href="#">Tower of the Swallow</a></b></li>
+            </ul>
+        </nav>
+        <main>
+            <article class="article-content">
+                <figure>
+                    <img src="https://s1.adlibris.com/images/56720886/tower-of-the-swallow.jpg" alt="bilde av witcher bok">
+                </figure>
+                <section>
+                    <header>
+                        <h2>Tower of the Swallow</h2><span>- pocket, Engelsk, 2020</span>
+                    </header>
+                    <span>Forfatter: Andrzej Sapkowski</span>
+                    <span id="price"></span>
+                    <form>
+                        <fieldset>
+                            <label for="amount">Antall</label>
+                            <input type="number" max="10" min="1" name="amount" value="1" id="amount">
+                            <button>Legg i handlekurv</button>
+                        </fieldset>
+                    </form>
+                    <article>
+                        <h4>Beskrivelse</h4>
+                        <p>The world is at war and the prophesied saviour is missing in the fourth novel in the New York Times bestselling Witcher series that inspired the #1 most watched Netflix series of 2019</p>
+                    </article>
+                    <article>
+                        <h4>Produktinformasjon</h4>
+                        <table>
+                            <tr>
+                                <td>Forfatter: Andrzej Sapkowski</td>
+                                <td>Vekt: 324 gram</td>
+                            </tr>
+                            <tr>
+                                <td>Undertittel: Witcher 4 - now a major netflix show</td>
+                                <td>Serie: The Witcher</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9781473231115</td>
+                                <td>Utgitt: 2020-02-13</td>
+                            </tr>
+                            <tr>
+                                <td>Språk: Engelsk</td>
+                                <td>Forlag: Orion</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Antall sider: 464</td>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
