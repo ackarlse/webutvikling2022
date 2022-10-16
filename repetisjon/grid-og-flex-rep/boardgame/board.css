@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bak.png");
+    background-size: cover;
+    padding: 0 3rem;
+}
+
+div{
+    background-color: #F3EADB;
+    border: 2px solid #35291f;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+div i{
+    width: 100%;
+}
+.fas.fa-gem{
+    font-size: 30px;
+    color: #37b4ff;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-coins{
+    font-size: 30px;
+    color: #fff22e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-dragon {
+    font-size: 30px;
+    color: brown;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-hat-wizard {
+    font-size: 33px;
+    transform: rotate(-21deg);
+    color: #53399e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+
+
+#grid-container{
+    display: grid;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    /*Denne kan skrives anderledes, men det skal være 9 kolonner*/
+    grid-template-columns: repeat(9, /*......*/);
+    /*Denne kan skrives anderledes, men det skal være 10 rader*/
+    grid-template-rows: repeat(10, /*........*/);
+    min-height: 900px;
+}
+
+#cell-1{
+
+}
+
+#cell-2{
+
+}
+
+#cell-3{
+
+}
+
+#cell-4{
+
+}
+
+#cell-5{
+
+}
+
+/*Avsporing*/
+
+#cell-6{
+
+}
+
+#cell-7{
+
+}
+
+#cell-8{
+
+}
+
+#cell-9{
+
+}
+/*Slutt på avsporing*/
+
+#cell-10{
+
+}
+
+#cell-11{
+
+}
+
+#cell-12{
+
+}
+
+/*Avsporing*/
+
+#cell-13{
+
+}
+
+#cell-14{
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-15{
+
+}
+
+#cell-16{
+
+}
+
+#cell-17{
+
+}
+
+#cell-18{
+
+}
+
+/*Avsporing*/
+
+#cell-19{
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-20{
+
+}
+
+#cell-21{
+
+
+}
+
+#cell-22{
+
+
+}
+
+#cell-23{
+
+
+}
+
+#cell-24{
+
+
+}
+
+#cell-25{
+
+}
+
+#cell-26{
+
+}
+
+#cell-27{
+
+}
