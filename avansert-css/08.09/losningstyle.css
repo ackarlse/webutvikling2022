@@ -26,11 +26,17 @@ header nav ul li{
 header nav a{
     color:#000;
     text-decoration: none;
+    position: relative;
 }
 
 header nav ul li a:hover{
-    text-decoration: underline;
+    
+ 
 }
+
+
+  
+  
 
 nav{
     overflow: auto;
