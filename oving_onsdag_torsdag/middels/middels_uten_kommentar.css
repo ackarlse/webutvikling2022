@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    background-color: #efefef;
+    min-height: 250px;
+}
+
+/*-------------Mobile-first-------------*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    /*****/
+    /*****/
+    /*****/
+}
+
+.container > *{
+    background-color: #efefef;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header{
+    /*****/
+} 
+nav{
+    /*****/
+} 
+nav ul {
+    /*****/
+    /*****/
+    /*****/
+    /*****/
+    /*****/
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#welcome{
+    /*****/
+}
+#banner{
+    /*****/
+    height: 30vh;
+}
+main{
+    /*****/
+    background-color: transparent !important;
+    padding:0rem !important;
+    /*****/
+    /*****/
+}  
+
+main article{
+    padding: 1rem;
+}
+
+.box {
+    background-color: #efefef;
+    /*****/
+    /*****/
+}
+footer
+{
+    /*****/
+} 
+
+/*-------------Ipad/nettbrett-------------*/
+@media only screen and (min-width:430px){
+    main{
+        /*****/
+        /*****/
+        /*****/
+        /*****/
+    }
+    #big-box-1{
+        /*****/
+        }
+    #big-box-2{
+        /*****/
+    }
+   .container{ 
+    /*****/
+    }
+}
+@media only screen and (min-width:1000px){
+    main{
+        /*****/
+        /*****/
+        /*****/
+        /*****/
+    }
+
+    .container{
+        /*****/
+    }
+    nav ul{
+        /*****/
+    }   
+    #big-box-1{
+        /*****/
+    }
+
+    #big-box-2{
+        /*****/
+    }
+
+}

@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+/*-------------Mobile-first-------------*/
+body{
+    margin: 0;
+    font-size: calc(1rem + 1vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*TODO: Du skal lage grid for mobil, det skal være 5 områder, 1 kolonne, 5 rader*/
+    /*****/
+    /*****/
+}
+header{
+    /*TODO: På mobil skal navet ligge hvor header ligger på desktop*/
+    /*****/
+    height: 50vh;
+    background-color: #efefef;
+    /*TODO: Du skal flexe innholdet i header slik at det ligger i midten både vertikalt og horisontalt*/
+    /*****/
+    /*****/
+    /*****/
+}
+nav{
+    /*TODO: På mobil skal header ligge hvor navnet ligger på desktop*/
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #efefef;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    /*TODO: Menypunktene skal ligge under hverandre på mobil og ikke ha liste stil*/
+    /*****/
+    /*****/
+    /*****/
+    gap: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-weight: 600;
+    font-size: calc(1rem + 1vw);
+}
+main, aside, footer{
+    padding: 1rem;
+}
+main{
+    /*TODO: Plassere main i grid området ment for main*/
+    /*****/
+
+}
+
+main section{
+    /*TODO: Få alle artikkelboksene til å ligge etter hverandre og falle under hverandre når det ikke lenger er plass til de på raden*/
+    /*****/
+    /*****/
+}
+
+main section h2{
+    flex-basis: 100%;
+}
+
+main section article{
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 1rem;
+    box-shadow: 6px 5px 7px #dadada;
+}
+aside{
+    /*TODO: Plassere aide i grid-området ment for aside*/
+    background-color: #acc5c5;
+}
+footer{
+    /*TODO: Plassere footer i grid-området ment for footer*/
+    background-color: #272727;
+    color: #fff;
+    text-align: center;
+}
+
+@media only screen and (min-width:900px){
+    body, nav ul li a{
+        font-size: 1rem;
+    }
+    body{
+        /*TODO: Du skal endre på grid-områdene slik at de er tilpasset desktop
+        Det skal være 3 kolonner, 4 rader, se bilder av ferdig resultat*/
+        /*****/
+    }
+
+    header{
+        /*TODO: På desktop skal header endres til sitt eget område i gridet */
+        /*****/
+    }
+    nav{
+        /*TODO: På desktop skal navet endres til sitt eget område i gridet */
+        /*****/
+        display: flex;
+        justify-content: end;
+    }
+    nav ul{
+        /*TODO: På desktop skal menypunktene ligge ved siden av hverandre */
+        /*****/
+    }
+
+}

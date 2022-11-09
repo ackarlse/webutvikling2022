@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    background-color: #efefef;
+    min-height: 250px;
+}
+
+/*-------------Mobile-first-------------*/
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    /*TODO: Du skal lage grid for mobil, det skal være 6 områder, 1 kolonne, 6 rader*/
+    /*TODO: Du skal også ha et mellomrom på en 1rem i gridet*/
+    /*****/
+    /*****/
+    /*****/
+}
+
+.container > *{
+    background-color: #efefef;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header{
+    /*TODO: header skal ligge på toppen av siden*/
+    /*****/
+} 
+nav{
+    /*TODO: navet skal ligge under header*/
+    /*****/
+} 
+nav ul {
+    /*TODO: liste elementene skal ligge under hverandre på mobil, det skal ikke ha en liste stil*/
+    /*TODO: Du skal også være et mellomm rom på 1rem mellom listepunktene*/
+    /*****/
+    /*****/
+    /*****/
+    /*****/
+    /*****/
+    padding: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+#welcome{
+    /*TODO: welcome seksjonen skal ligge under navet*/
+    /*****/
+}
+#banner{
+    /*TODO: banner seksjonen skal ligge under welcome seksjonen*/
+    /*****/
+    height: 30vh;
+}
+main{
+    /*TODO: main skal ligge under banner seksjonen*/
+    /*****/
+    background-color: transparent !important;
+    padding:0rem !important;
+    /*TODO: på mobil så kan innholdet i main være flexet og falle under hverandre når det ikke lenger er plass*/
+    /*****/
+    /*****/
+}  
+
+main article{
+    padding: 1rem;
+}
+
+.box {
+    background-color: #efefef;
+    /*TODO: artikkelboksene skal ha en basis str på 300px og skal vokse i likehet med hverandre (1 hel del av ledig plass)*/
+    /*****/
+    /*****/
+}
+footer
+{
+    /*TODO: footer skal ligge under main og nederst på siden*/
+    /*****/
+} 
+
+/*-------------Ipad/nettbrett-------------*/
+@media only screen and (min-width:430px){
+    main{
+        /*TODO: på ipad/nettbrett skal innholdet i main bli plasser i et grid,hint: du må endre display verdien slik at du kan gjøre main om til en grid container
+        , gridet skal også ha et mellomrom på 1rem */
+        /*TODO: gridet skal ha to kolonner som tar like mye plass */
+        /*TODO: gridet skal ha 5 rader og radene skal ha en høyde på 250px */
+        /*TODO: */
+        /*****/
+        /*****/
+        /*****/
+        /*****/
+    }
+    #big-box-1{
+        /*TODO: denne artikkelboksen skal ta opp plassen til to kolonner og to rader, se wireframe for plassering*/
+        /*****/
+        }
+    #big-box-2{
+        /*TODO: denne artikkelboksen skal ta opp plassen til to kolonner og to rader, se wireframe for plassering*/
+        /*****/
+    }
+   .container{ 
+    /*TODO:gridet for hele siden skal endre seg litt på nettbrett
+    Du skal ha 2 kolonner, du skal beholde alle de samme områdene som tidligere.
+    men nå skal header og nav ligge ved siden av hverandre. Alle de andre områdene kan
+    fortsatt være like, men de må nå gå over to kolonner.
+    Du skal ha 2 kolonner og 5 rader.*/
+    /*****/
+    }
+}
+@media only screen and (min-width:1000px){
+    /*TODO: På desktop så skal gridet i main endre seg enda litt til,
+    på desktop skal det ha 4 kolonner på 250px i str og 5 rader med 250px str.
+    Det skal fortsatt ha et mellomrom på 1 gap*/
+    main{
+        /*****/
+        /*****/
+        /*****/
+        /*****/
+    }
+
+    .container{
+        /*TODO: på mobil skal layouten på gridet endre seg enda litt til,
+        den skal nå ha 3 kolonner, men skal fortsatt ha 5 rader.
+        header og nav skal fortsatt ligge ved siden av hverandre, men nå skal navnet ta to kolonner, mens header kun tar en.
+        Resten kan fortsatt være likt, men du må huske å oppdatere områdene med en ekstra kolonne. Hint: "footer footer" blir til "footer footer footer"*/
+        /*****/
+    }
+    nav ul{
+        /*TODO: På desktop så skal listepunktene også ligge ved siden av hverandre*/
+        /*****/
+    }   
+    #big-box-1{
+        /*TODO: denne artikkelboksen skal ta opp plassen til to kolonner og to rader, se wireframe for plassering*/
+        /*****/
+    }
+
+    #big-box-2{
+        /*TODO: denne artikkelboksen skal ta opp plassen til to kolonner og to rader, se wireframe for plassering*/
+        /*****/
+    }
+
+}
